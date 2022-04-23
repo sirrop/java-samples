@@ -16,7 +16,6 @@
 
 package blog.shiro_tech.java_example;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
