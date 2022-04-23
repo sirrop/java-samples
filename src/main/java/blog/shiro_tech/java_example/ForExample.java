@@ -19,15 +19,21 @@ package blog.shiro_tech.java_example;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * For文の例です。
+ */
 public class ForExample {
     public static void main(String[] args) {
+        // ユーザーからの入力を読み取るためのオブジェクト
         Scanner s = new Scanner(System.in);
+
+        // ループの回数
         int times = 0;
         do {
             System.out.print("数字を入力してください > ");
             try {
-                times = s.nextInt();
-            } catch (InputMismatchException ignored) {
+                times = Integer.parseInt(s.next());
+            } catch (NumberFormatException ignored) {
             }
             if (times <= 0) {
                 System.out.println("0以上の数字を入力してください");
